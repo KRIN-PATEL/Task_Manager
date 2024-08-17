@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <nav>
+            <a href="#" id="addTaskNav">Add Task</a>
+            <a href="#" id="searchTaskNav">Search Task</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="task-sections-container">
+            <div id="addTaskSection" class="task-section">
+                <h2>Add Task</h2>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="taskDescription">Task Description:</label>
+                        <input type="text" id="taskDescription" placeholder="Task description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assignedTo">Assigned To:</label>
+                        <input type="text" id="assignedTo" placeholder="Assigned to" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assignedDate">Assigned Date:</label>
+                        <input type="date" id="assignedDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assignedBy">Assigned By:</label>
+                        <input type="text" id="assignedBy" placeholder="Assigned by" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dueDate">Due Date:</label>
+                        <input type="date" id="dueDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority:</label>
+                        <select id="priority">
+                            <option value="high">High</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <button type="button" id="addTaskBtn">Add Task</button>
+                </form>
+            </div>
+            <div id="searchTaskSection" class="task-section" style="display: none;">
+                <h2>Search Task</h2>
+                <input type="text" id="searchInput" placeholder="Search tasks">
+                <ul id="searchResults"></ul>
+            </div>
+        </div>
+        <div id="taskListContainer" class="task-list-container">
+            <ul id="taskList"></ul>
+            <button id="clearTasksBtn">Clear Tasks</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <b>Designed by Krin Patel </b></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

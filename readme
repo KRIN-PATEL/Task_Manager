@@ -1,0 +1,74 @@
+## Task Manager  ##
+
+# Project Description #
+
+# The Task Manager is a simple web application designed to help users efficiently manage tasks. Users can add, edit, delete, and search tasks. The application stores tasks on the server and retrieves them dynamically, making it an ideal tool for organizing and tracking task-related activities. This project utilizes Node.js and Express.js on the backend, with a clean, responsive HTML/CSS/JavaScript frontend. #
+
+
+# Features #
+
+# Add Task: Users can create new tasks with details such as task description, assigned to, assigned by, assigned date, due date, and priority level.
+
+# Edit Task: Allows users to edit the details of an existing task directly from the task list.
+
+# Delete Task: Users can delete individual tasks or clear all tasks from the list.
+
+# Search Task: A search function allows users to filter tasks based on description, assigned person, priority, and other criteria.
+
+# Dynamic Task List: The task list is dynamically updated, reflecting any changes immediately.
+
+# Random Task Background Colors: Each task is displayed with a different background color for visual distinction.
+
+# Responsive Design: The application layout adjusts for different screen sizes, making it usable on both desktop and mobile devices.
+
+
+# Technologies Used
+
+# Frontend:
+
+# HTML
+# CSS
+# JavaScript
+# Responsive design principles for various screen sizes.
+# Dynamic interaction with the server using JavaScript.
+
+# Backend:
+
+# Node.js
+# Express.js
+# RESTful API to handle CRUD operations on tasks.
+# Middleware to handle JSON and URL-encoded data.
+
+# Data Storage:
+
+# Tasks are stored in a JSON file (data.txt) on the server.
+
+
+# Project Struture 
+
+# Public Folder: Contains static files such as HTML, CSS, and JavaScript.
+
+# Models Folder: Contains data.js, responsible for handling data operations (getting, saving, updating, and deleting tasks).
+
+# Controllers Folder: Contains api.js, which defines API functions for handling task-related requests.
+
+# Routes Folder: Contains index.js, which defines the application routes and links to the appropriate controller functions.
+
+# App.js: The main application file that sets up the Express server and handles routing.
+
+# Setup Instructions
+
+# Clone the repository:
+
+# Navigate to the project directory:
+
+# npm install
+
+# Start the server: npm start(nodemon app.js)
+
+# Open the application in your browser:
+# Visit http://localhost:1552 to start managing your tasks.
+
+# Made By
+
+# KRIN PATEL #
